@@ -12,6 +12,7 @@ protocol LoginRouterProtocol: AnyObject{
     func createLoginModule() -> UIViewController
     
     func navigateToHomeModule()
+    func navigateToAlertController(title: String)
 }
 
 protocol LoginPresenterProtocol: AnyObject{
@@ -20,6 +21,7 @@ protocol LoginPresenterProtocol: AnyObject{
     var view: LoginViewProtocol? { get set }
     
     func goToHomeModule()
+    func goToAlertController(title: String)
 }
 
 protocol LoginInteractorProtocol: AnyObject{

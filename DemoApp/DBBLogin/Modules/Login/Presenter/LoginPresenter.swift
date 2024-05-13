@@ -19,4 +19,8 @@ extension LoginPresenter: LoginPresenterProtocol{
         router?.navigateToHomeModule()
     }
     
+    func goToAlertController(title: String) {
+        router?.navigateToAlertController(title: title)
+    }
+    
 }

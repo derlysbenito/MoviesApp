@@ -41,5 +41,10 @@ extension LoginRouter: LoginRouterProtocol{
         coordinator?.navigateHomeCoordidator()
     }
     
+    func navigateToAlertController(title: String) {
+        let alertController = UIAlertController(title: title, message: "", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Aceptar", style: .default))
+        coordinator?.presenter?.presentViewController(viewController: alertController, animate: true)
+    }
     
 }

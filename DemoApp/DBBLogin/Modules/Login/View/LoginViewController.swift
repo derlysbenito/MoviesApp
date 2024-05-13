@@ -30,6 +30,8 @@ class LoginViewController: UIViewController{
     @IBAction func buttonContinueAction(_ sender: Any) {
         if userTextField.text == "Admin" && passwordTextField.text == "Password*123."{
             presenter?.goToHomeModule()
+        } else {
+            presenter?.goToAlertController(title: "Error con el usuario")
         }
     }
     
