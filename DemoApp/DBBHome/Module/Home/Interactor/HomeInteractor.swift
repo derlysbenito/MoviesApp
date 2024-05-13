@@ -18,8 +18,8 @@ class HomeInteractor{
 }
 
 extension HomeInteractor: HomeInteractorProtocol{
-    func getMovies(onCompletion: @escaping MoviesResultError) {
-        dataSource?.getMovieUpcoming(callbackHandler: { response in
+    func getMovies(page: Int, onCompletion: @escaping MoviesResultError) {
+        dataSource?.getMovieUpcoming(page: page, callbackHandler: { response in
             onCompletion(response)
         })
     }

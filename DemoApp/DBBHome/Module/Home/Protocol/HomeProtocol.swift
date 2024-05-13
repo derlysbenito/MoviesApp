@@ -19,9 +19,7 @@ protocol HomePresenterProtocol: AnyObject{
     var interactor : HomeInteractorProtocol? { get set }
     var view : HomeViewProtocol? { get set }
     
-    func viewDidLoad()
-    
-    func doGetMovies()
+    func doGetMovies(page: Int)
     func dogetMoviesSuccess()
     func doGetMoviesError()
     
@@ -33,7 +31,7 @@ protocol HomePresenterProtocol: AnyObject{
 }
 
 protocol HomeInteractorProtocol: AnyObject{
-    func getMovies(onCompletion: @escaping MoviesResultError)
+    func getMovies(page:Int, onCompletion: @escaping MoviesResultError)
 }
 
 protocol HomeViewProtocol: AnyObject{

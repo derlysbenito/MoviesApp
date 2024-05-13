@@ -24,6 +24,14 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        print(indexPath.row)
+        if indexPath.row == ((presenter?.numberOfRows() ?? 0) - 1) {
+            currentPage += 1
+            presenter?.doGetMovies(page: currentPage)
+        }
+    }
+    
 }
 
 extension HomeViewController: UICollectionViewDelegateFlowLayout{

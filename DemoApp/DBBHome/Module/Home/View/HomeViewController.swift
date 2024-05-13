@@ -14,13 +14,15 @@ class HomeViewController: UIViewController{
 
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var currentPage = 1
+    
     //MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBar()
         
-        presenter?.viewDidLoad()
+        presenter?.doGetMovies(page: currentPage)
 
         setupCollectionView()
     }

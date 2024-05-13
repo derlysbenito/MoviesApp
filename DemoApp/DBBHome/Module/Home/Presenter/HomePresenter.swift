@@ -18,12 +18,6 @@ class HomePresenter{
 
 extension HomePresenter: HomePresenterProtocol{
     
-    //MARK: - Life Cycle
-    
-    func viewDidLoad(){
-        doGetMovies()
-    }
-    
     //MARK: - Navigation
     
     func goToDetailModule(movie: ResultsResponse?) {
@@ -31,14 +25,13 @@ extension HomePresenter: HomePresenterProtocol{
     }
     
     //MARK: - Data
-    
-    func doGetMovies() {
-        interactor?.getMovies(onCompletion: { [weak self] response in
+    func doGetMovies(page: Int) {
+        interactor?.getMovies(page: page, onCompletion: { [weak self] response in
             switch response.result{
             case .success(let dataInfo):
                 if let data = dataInfo.results{
                     print(data)
-                    self?.moviesList = data
+                    self?.moviesList.append(contentsOf: data)
                     self?.dogetMoviesSuccess()
                 }
             case .failure(let error):
@@ -46,6 +39,7 @@ extension HomePresenter: HomePresenterProtocol{
                 self?.doGetMoviesError()
             }
         })
+        
     }
     
     func dogetMoviesSuccess() {
@@ -59,7 +53,7 @@ extension HomePresenter: HomePresenterProtocol{
     //MARK: - UICollectionView
     
     func numberOfRows() -> Int {
-        return moviesList.count 
+        return moviesList.count
     }
     
     func movieItem(section: Int, index: Int) -> ResultsResponse {
