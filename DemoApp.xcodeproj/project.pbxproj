@@ -30,6 +30,14 @@
 		D18B270C2BF269E200320534 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B270B2BF269E200320534 /* DetailPresenter.swift */; };
 		D18B270E2BF26A1800320534 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B270D2BF26A1800320534 /* DetailInteractor.swift */; };
 		D18B27102BF26A2D00320534 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B270F2BF26A2D00320534 /* DetailViewController.swift */; };
+		D18B271D2BF27C2000320534 /* LoginCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B271C2BF27C2000320534 /* LoginCoordinatorProtocol.swift */; };
+		D18B271F2BF27C2900320534 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B271E2BF27C2900320534 /* LoginCoordinator.swift */; };
+		D18B27212BF27C8F00320534 /* LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B27202BF27C8F00320534 /* LoginProtocol.swift */; };
+		D18B27242BF29EFD00320534 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D18B27232BF29EFD00320534 /* Login.storyboard */; };
+		D18B27272BF2ABC900320534 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B27262BF2ABC900320534 /* LoginRouter.swift */; };
+		D18B27292BF2ABDB00320534 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B27282BF2ABDB00320534 /* LoginPresenter.swift */; };
+		D18B272B2BF2ABEC00320534 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B272A2BF2ABEC00320534 /* LoginInteractor.swift */; };
+		D18B272D2BF2ABFF00320534 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B272C2BF2ABFF00320534 /* LoginViewController.swift */; };
 		D1EDDF512BF1D8A600803935 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EDDF502BF1D8A600803935 /* AppDelegate.swift */; };
 		D1EDDF532BF1D8A600803935 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EDDF522BF1D8A600803935 /* SceneDelegate.swift */; };
 		D1EDDF5A2BF1D8A800803935 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1EDDF592BF1D8A800803935 /* Assets.xcassets */; };
@@ -62,6 +70,14 @@
 		D18B270B2BF269E200320534 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		D18B270D2BF26A1800320534 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
 		D18B270F2BF26A2D00320534 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D18B271C2BF27C2000320534 /* LoginCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		D18B271E2BF27C2900320534 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		D18B27202BF27C8F00320534 /* LoginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocol.swift; sourceTree = "<group>"; };
+		D18B27232BF29EFD00320534 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		D18B27262BF2ABC900320534 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		D18B27282BF2ABDB00320534 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		D18B272A2BF2ABEC00320534 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		D18B272C2BF2ABFF00320534 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D1EDDF4D2BF1D8A600803935 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1EDDF502BF1D8A600803935 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1EDDF522BF1D8A600803935 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +112,7 @@
 			children = (
 				D18B26D12BF1DA8100320534 /* CoordinatorProtocol.swift */,
 				D18B26D52BF1DAB800320534 /* HomeCoordinatorProtocol.swift */,
+				D18B271C2BF27C2000320534 /* LoginCoordinatorProtocol.swift */,
 				D18B26D72BF1DAC300320534 /* MainPresenterProtocol.swift */,
 			);
 			path = DBBCoordinator;
@@ -106,6 +123,7 @@
 			children = (
 				D18B26D92BF1DAED00320534 /* MainPresenter.swift */,
 				D18B26DB2BF1DAF900320534 /* HomeCoordinator.swift */,
+				D18B271E2BF27C2900320534 /* LoginCoordinator.swift */,
 			);
 			path = DBBModuleManager;
 			sourceTree = "<group>";
@@ -268,6 +286,83 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		D18B27152BF27BB900320534 /* DBBLogin */ = {
+			isa = PBXGroup;
+			children = (
+				D18B27252BF2ABAA00320534 /* Modules */,
+				D18B27222BF29EF300320534 /* Storyboard */,
+			);
+			path = DBBLogin;
+			sourceTree = "<group>";
+		};
+		D18B27162BF27BD500320534 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D18B271B2BF27C0100320534 /* Protocol */,
+				D18B271A2BF27BF100320534 /* Router */,
+				D18B27192BF27BEB00320534 /* Presenter */,
+				D18B27182BF27BE600320534 /* Interactor */,
+				D18B27172BF27BE100320534 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D18B27172BF27BE100320534 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D18B272C2BF2ABFF00320534 /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D18B27182BF27BE600320534 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D18B272A2BF2ABEC00320534 /* LoginInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D18B27192BF27BEB00320534 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D18B27282BF2ABDB00320534 /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D18B271A2BF27BF100320534 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D18B27262BF2ABC900320534 /* LoginRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D18B271B2BF27C0100320534 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				D18B27202BF27C8F00320534 /* LoginProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		D18B27222BF29EF300320534 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D18B27232BF29EFD00320534 /* Login.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		D18B27252BF2ABAA00320534 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D18B27162BF27BD500320534 /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
 		D1EDDF442BF1D8A600803935 = {
 			isa = PBXGroup;
 			children = (
@@ -295,6 +390,7 @@
 				D18B26F22BF1DF8800320534 /* DBBDataSource */,
 				D18B26F32BF1DF9000320534 /* DBBEntity */,
 				D18B26DD2BF1DB2F00320534 /* DBBHome */,
+				D18B27152BF27BB900320534 /* DBBLogin */,
 				D1EDDF592BF1D8A800803935 /* Assets.xcassets */,
 				D1EDDF5B2BF1D8A800803935 /* LaunchScreen.storyboard */,
 				D1EDDF5E2BF1D8A800803935 /* Info.plist */,
@@ -382,6 +478,7 @@
 				D18B27052BF1F1EF00320534 /* MovieDetail.storyboard in Resources */,
 				D18B26E62BF1DB8600320534 /* Home.storyboard in Resources */,
 				D1EDDF5D2BF1D8A800803935 /* LaunchScreen.storyboard in Resources */,
+				D18B27242BF29EFD00320534 /* Login.storyboard in Resources */,
 				D1EDDF5A2BF1D8A800803935 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,14 +536,20 @@
 				D18B26FB2BF1E0DC00320534 /* ResultsResponse.swift in Sources */,
 				D18B26E92BF1DBD300320534 /* HomeProtocol.swift in Sources */,
 				D18B270C2BF269E200320534 /* DetailPresenter.swift in Sources */,
+				D18B271D2BF27C2000320534 /* LoginCoordinatorProtocol.swift in Sources */,
+				D18B272D2BF2ABFF00320534 /* LoginViewController.swift in Sources */,
 				D18B270A2BF269C500320534 /* DetailRouter.swift in Sources */,
+				D18B271F2BF27C2900320534 /* LoginCoordinator.swift in Sources */,
 				D18B26EF2BF1DC7C00320534 /* HomeInteractor.swift in Sources */,
 				D18B26D82BF1DAC300320534 /* MainPresenterProtocol.swift in Sources */,
 				D18B26DA2BF1DAED00320534 /* MainPresenter.swift in Sources */,
 				D18B26ED2BF1DC6600320534 /* HomePresenter.swift in Sources */,
 				D1EDDF512BF1D8A600803935 /* AppDelegate.swift in Sources */,
+				D18B27292BF2ABDB00320534 /* LoginPresenter.swift in Sources */,
+				D18B27212BF27C8F00320534 /* LoginProtocol.swift in Sources */,
 				D1EDDF532BF1D8A600803935 /* SceneDelegate.swift in Sources */,
 				D18B27102BF26A2D00320534 /* DetailViewController.swift in Sources */,
+				D18B272B2BF2ABEC00320534 /* LoginInteractor.swift in Sources */,
 				D18B26D22BF1DA8100320534 /* CoordinatorProtocol.swift in Sources */,
 				D18B26FE2BF1EA0100320534 /* HomeCollectionViewCell.swift in Sources */,
 				D18B26DC2BF1DAF900320534 /* HomeCoordinator.swift in Sources */,
@@ -456,6 +559,7 @@
 				D18B26D62BF1DAB800320534 /* HomeCoordinatorProtocol.swift in Sources */,
 				D18B270E2BF26A1800320534 /* DetailInteractor.swift in Sources */,
 				D18B26F12BF1DC9000320534 /* HomeViewController.swift in Sources */,
+				D18B27272BF2ABC900320534 /* LoginRouter.swift in Sources */,
 				D18B26F92BF1E09B00320534 /* MainResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
