@@ -20,6 +20,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
             return UICollectionViewCell()
         }
         cell.fillCell(item: item)
+        cell.delegate = self
         return cell
     }
     
@@ -28,8 +29,10 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
 extension HomeViewController: UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let size = (collectionView.frame.size.width)/2
-        return CGSize(width: size, height: size)
+        
+        let numberOfItemsPerRow: CGFloat = 2.0
+        let width = (collectionView.frame.width)/numberOfItemsPerRow
+        return CGSize(width: width, height: 300)
     }
     
 }

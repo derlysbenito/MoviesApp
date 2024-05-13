@@ -24,6 +24,12 @@
 		D18B26F92BF1E09B00320534 /* MainResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B26F82BF1E09B00320534 /* MainResponse.swift */; };
 		D18B26FB2BF1E0DC00320534 /* ResultsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B26FA2BF1E0DC00320534 /* ResultsResponse.swift */; };
 		D18B26FE2BF1EA0100320534 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B26FD2BF1EA0100320534 /* HomeCollectionViewCell.swift */; };
+		D18B27052BF1F1EF00320534 /* MovieDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D18B27042BF1F1EF00320534 /* MovieDetail.storyboard */; };
+		D18B27082BF1F44400320534 /* DetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B27072BF1F44400320534 /* DetailProtocol.swift */; };
+		D18B270A2BF269C500320534 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B27092BF269C500320534 /* DetailRouter.swift */; };
+		D18B270C2BF269E200320534 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B270B2BF269E200320534 /* DetailPresenter.swift */; };
+		D18B270E2BF26A1800320534 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B270D2BF26A1800320534 /* DetailInteractor.swift */; };
+		D18B27102BF26A2D00320534 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B270F2BF26A2D00320534 /* DetailViewController.swift */; };
 		D1EDDF512BF1D8A600803935 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EDDF502BF1D8A600803935 /* AppDelegate.swift */; };
 		D1EDDF532BF1D8A600803935 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EDDF522BF1D8A600803935 /* SceneDelegate.swift */; };
 		D1EDDF5A2BF1D8A800803935 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1EDDF592BF1D8A800803935 /* Assets.xcassets */; };
@@ -50,6 +56,12 @@
 		D18B26F82BF1E09B00320534 /* MainResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainResponse.swift; sourceTree = "<group>"; };
 		D18B26FA2BF1E0DC00320534 /* ResultsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsResponse.swift; sourceTree = "<group>"; };
 		D18B26FD2BF1EA0100320534 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		D18B27042BF1F1EF00320534 /* MovieDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MovieDetail.storyboard; sourceTree = "<group>"; };
+		D18B27072BF1F44400320534 /* DetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProtocol.swift; sourceTree = "<group>"; };
+		D18B27092BF269C500320534 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		D18B270B2BF269E200320534 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		D18B270D2BF26A1800320534 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		D18B270F2BF26A2D00320534 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D1EDDF4D2BF1D8A600803935 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1EDDF502BF1D8A600803935 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1EDDF522BF1D8A600803935 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +122,7 @@
 		D18B26DE2BF1DB4200320534 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				D18B26FF2BF1F1BE00320534 /* Detail */,
 				D18B26E02BF1DB5800320534 /* Home */,
 			);
 			path = Module;
@@ -119,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				D18B26E52BF1DB8600320534 /* Home.storyboard */,
+				D18B27042BF1F1EF00320534 /* MovieDetail.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -202,6 +216,58 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		D18B26FF2BF1F1BE00320534 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				D18B27062BF1F43000320534 /* Protocol */,
+				D18B27032BF1F1DD00320534 /* Router */,
+				D18B27022BF1F1D800320534 /* Presenter */,
+				D18B27012BF1F1D400320534 /* Interactor */,
+				D18B27002BF1F1CF00320534 /* View */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		D18B27002BF1F1CF00320534 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D18B270F2BF26A2D00320534 /* DetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D18B27012BF1F1D400320534 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D18B270D2BF26A1800320534 /* DetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D18B27022BF1F1D800320534 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D18B270B2BF269E200320534 /* DetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D18B27032BF1F1DD00320534 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D18B27092BF269C500320534 /* DetailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D18B27062BF1F43000320534 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				D18B27072BF1F44400320534 /* DetailProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		D1EDDF442BF1D8A600803935 = {
 			isa = PBXGroup;
 			children = (
@@ -224,8 +290,8 @@
 			isa = PBXGroup;
 			children = (
 				D18B26CE2BF1D9DD00320534 /* SupportingFiles */,
-				D18B26D02BF1DA5800320534 /* DBBModuleManager */,
 				D18B26CF2BF1DA4500320534 /* DBBCoordinator */,
+				D18B26D02BF1DA5800320534 /* DBBModuleManager */,
 				D18B26F22BF1DF8800320534 /* DBBDataSource */,
 				D18B26F32BF1DF9000320534 /* DBBEntity */,
 				D18B26DD2BF1DB2F00320534 /* DBBHome */,
@@ -313,6 +379,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D18B27052BF1F1EF00320534 /* MovieDetail.storyboard in Resources */,
 				D18B26E62BF1DB8600320534 /* Home.storyboard in Resources */,
 				D1EDDF5D2BF1D8A800803935 /* LaunchScreen.storyboard in Resources */,
 				D1EDDF5A2BF1D8A800803935 /* Assets.xcassets in Resources */,
@@ -371,18 +438,23 @@
 				D18B26F72BF1E07100320534 /* DataSource.swift in Sources */,
 				D18B26FB2BF1E0DC00320534 /* ResultsResponse.swift in Sources */,
 				D18B26E92BF1DBD300320534 /* HomeProtocol.swift in Sources */,
+				D18B270C2BF269E200320534 /* DetailPresenter.swift in Sources */,
+				D18B270A2BF269C500320534 /* DetailRouter.swift in Sources */,
 				D18B26EF2BF1DC7C00320534 /* HomeInteractor.swift in Sources */,
 				D18B26D82BF1DAC300320534 /* MainPresenterProtocol.swift in Sources */,
 				D18B26DA2BF1DAED00320534 /* MainPresenter.swift in Sources */,
 				D18B26ED2BF1DC6600320534 /* HomePresenter.swift in Sources */,
 				D1EDDF512BF1D8A600803935 /* AppDelegate.swift in Sources */,
 				D1EDDF532BF1D8A600803935 /* SceneDelegate.swift in Sources */,
+				D18B27102BF26A2D00320534 /* DetailViewController.swift in Sources */,
 				D18B26D22BF1DA8100320534 /* CoordinatorProtocol.swift in Sources */,
 				D18B26FE2BF1EA0100320534 /* HomeCollectionViewCell.swift in Sources */,
 				D18B26DC2BF1DAF900320534 /* HomeCoordinator.swift in Sources */,
+				D18B27082BF1F44400320534 /* DetailProtocol.swift in Sources */,
 				D18B26EB2BF1DC4C00320534 /* HomeRouter.swift in Sources */,
 				D18B26F52BF1E02800320534 /* HomeViewController+CollectionView.swift in Sources */,
 				D18B26D62BF1DAB800320534 /* HomeCoordinatorProtocol.swift in Sources */,
+				D18B270E2BF26A1800320534 /* DetailInteractor.swift in Sources */,
 				D18B26F12BF1DC9000320534 /* HomeViewController.swift in Sources */,
 				D18B26F92BF1E09B00320534 /* MainResponse.swift in Sources */,
 			);

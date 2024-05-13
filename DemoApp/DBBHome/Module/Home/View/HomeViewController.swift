@@ -36,6 +36,7 @@ class HomeViewController: UIViewController{
         collectionView.dataSource = self
         collectionView.showsVerticalScrollIndicator = false
         collectionView.showsHorizontalScrollIndicator = false
+        collectionView.collectionViewLayout.invalidateLayout()
 
     }
     
@@ -50,9 +51,19 @@ class HomeViewController: UIViewController{
 //MARK: - HomeViewProtocol
 
 extension HomeViewController: HomeViewProtocol{
+    
     func reloadCollectionView() {
         collectionView.reloadData()
     }
     
+}
+
+//MARK: - HomeCollectionViewCellActionDelegate
+
+extension HomeViewController: HomeCollectionViewCellActionDelegate{
+    
+    func didSelectCell(model: ResultsResponse?) {
+        presenter?.goToDetailModule(movie: model)
+    }
     
 }

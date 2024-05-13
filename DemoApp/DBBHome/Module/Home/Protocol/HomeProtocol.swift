@@ -10,6 +10,8 @@ import UIKit
 
 protocol HomeRouterProtocol: AnyObject{
     func createHomeModule() -> UIViewController
+    
+    func navigateToDetailModule(movie: ResultsResponse?)
 }
 
 protocol HomePresenterProtocol: AnyObject{
@@ -25,6 +27,8 @@ protocol HomePresenterProtocol: AnyObject{
     
     func numberOfRows() -> Int
     func movieItem(section: Int, index: Int) -> ResultsResponse
+    
+    func goToDetailModule(movie: ResultsResponse?)
     
 }
 

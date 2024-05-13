@@ -38,5 +38,9 @@ extension HomeRouter: HomeRouterProtocol{
         return vc
     }
     
+    func navigateToDetailModule(movie: ResultsResponse?) {
+        let vc = DetailRouter(coordinator: self.coordinator).createDetailModule(movie: movie)
+        coordinator?.presenter?.pushViewController(viewController: vc, animate: true)
+    }
     
 }

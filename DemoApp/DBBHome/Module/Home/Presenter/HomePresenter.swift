@@ -24,6 +24,12 @@ extension HomePresenter: HomePresenterProtocol{
         doGetMovies()
     }
     
+    //MARK: - Navigation
+    
+    func goToDetailModule(movie: ResultsResponse?) {
+        router?.navigateToDetailModule(movie: movie)
+    }
+    
     //MARK: - Data
     
     func doGetMovies() {
