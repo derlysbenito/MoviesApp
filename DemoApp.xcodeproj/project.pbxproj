@@ -8,10 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		035AEE3F62D491BDD0581BB4 /* Pods_DemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B9D8093768A9AB5CD10797 /* Pods_DemoApp.framework */; };
+		D18B26D22BF1DA8100320534 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B26D12BF1DA8100320534 /* CoordinatorProtocol.swift */; };
+		D18B26D62BF1DAB800320534 /* HomeCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B26D52BF1DAB800320534 /* HomeCoordinatorProtocol.swift */; };
+		D18B26D82BF1DAC300320534 /* MainPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B26D72BF1DAC300320534 /* MainPresenterProtocol.swift */; };
+		D18B26DA2BF1DAED00320534 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B26D92BF1DAED00320534 /* MainPresenter.swift */; };
+		D18B26DC2BF1DAF900320534 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B26DB2BF1DAF900320534 /* HomeCoordinator.swift */; };
+		D18B26E62BF1DB8600320534 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D18B26E52BF1DB8600320534 /* Home.storyboard */; };
+		D18B26E92BF1DBD300320534 /* HomeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B26E82BF1DBD300320534 /* HomeProtocol.swift */; };
+		D18B26EB2BF1DC4C00320534 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B26EA2BF1DC4C00320534 /* HomeRouter.swift */; };
+		D18B26ED2BF1DC6600320534 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B26EC2BF1DC6600320534 /* HomePresenter.swift */; };
+		D18B26EF2BF1DC7C00320534 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B26EE2BF1DC7C00320534 /* HomeInteractor.swift */; };
+		D18B26F12BF1DC9000320534 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B26F02BF1DC9000320534 /* HomeViewController.swift */; };
 		D1EDDF512BF1D8A600803935 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EDDF502BF1D8A600803935 /* AppDelegate.swift */; };
 		D1EDDF532BF1D8A600803935 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EDDF522BF1D8A600803935 /* SceneDelegate.swift */; };
-		D1EDDF552BF1D8A600803935 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EDDF542BF1D8A600803935 /* ViewController.swift */; };
-		D1EDDF582BF1D8A600803935 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1EDDF562BF1D8A600803935 /* Main.storyboard */; };
 		D1EDDF5A2BF1D8A800803935 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1EDDF592BF1D8A800803935 /* Assets.xcassets */; };
 		D1EDDF5D2BF1D8A800803935 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1EDDF5B2BF1D8A800803935 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -20,11 +29,20 @@
 		75B9D8093768A9AB5CD10797 /* Pods_DemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9ABE4F4F2DE4E82D533139E /* Pods-DemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoApp.release.xcconfig"; path = "Target Support Files/Pods-DemoApp/Pods-DemoApp.release.xcconfig"; sourceTree = "<group>"; };
 		CA9CF7E5051B2D614D13817E /* Pods-DemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoApp.debug.xcconfig"; path = "Target Support Files/Pods-DemoApp/Pods-DemoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D18B26D12BF1DA8100320534 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		D18B26D52BF1DAB800320534 /* HomeCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		D18B26D72BF1DAC300320534 /* MainPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterProtocol.swift; sourceTree = "<group>"; };
+		D18B26D92BF1DAED00320534 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		D18B26DB2BF1DAF900320534 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		D18B26E52BF1DB8600320534 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		D18B26E82BF1DBD300320534 /* HomeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocol.swift; sourceTree = "<group>"; };
+		D18B26EA2BF1DC4C00320534 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		D18B26EC2BF1DC6600320534 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		D18B26EE2BF1DC7C00320534 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		D18B26F02BF1DC9000320534 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D1EDDF4D2BF1D8A600803935 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1EDDF502BF1D8A600803935 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1EDDF522BF1D8A600803935 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D1EDDF542BF1D8A600803935 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D1EDDF572BF1D8A600803935 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D1EDDF592BF1D8A800803935 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1EDDF5C2BF1D8A800803935 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1EDDF5E2BF1D8A800803935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,6 +60,111 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D18B26CE2BF1D9DD00320534 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D1EDDF522BF1D8A600803935 /* SceneDelegate.swift */,
+				D1EDDF502BF1D8A600803935 /* AppDelegate.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		D18B26CF2BF1DA4500320534 /* DBBCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				D18B26D12BF1DA8100320534 /* CoordinatorProtocol.swift */,
+				D18B26D52BF1DAB800320534 /* HomeCoordinatorProtocol.swift */,
+				D18B26D72BF1DAC300320534 /* MainPresenterProtocol.swift */,
+			);
+			path = DBBCoordinator;
+			sourceTree = "<group>";
+		};
+		D18B26D02BF1DA5800320534 /* DBBModuleManager */ = {
+			isa = PBXGroup;
+			children = (
+				D18B26D92BF1DAED00320534 /* MainPresenter.swift */,
+				D18B26DB2BF1DAF900320534 /* HomeCoordinator.swift */,
+			);
+			path = DBBModuleManager;
+			sourceTree = "<group>";
+		};
+		D18B26DD2BF1DB2F00320534 /* DBBHome */ = {
+			isa = PBXGroup;
+			children = (
+				D18B26DE2BF1DB4200320534 /* Module */,
+				D18B26DF2BF1DB4A00320534 /* Storyboard */,
+			);
+			path = DBBHome;
+			sourceTree = "<group>";
+		};
+		D18B26DE2BF1DB4200320534 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				D18B26E02BF1DB5800320534 /* Home */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		D18B26DF2BF1DB4A00320534 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D18B26E52BF1DB8600320534 /* Home.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		D18B26E02BF1DB5800320534 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D18B26E72BF1DBB800320534 /* Protocol */,
+				D18B26E42BF1DB6C00320534 /* Router */,
+				D18B26E32BF1DB6800320534 /* Presenter */,
+				D18B26E22BF1DB6100320534 /* Interactor */,
+				D18B26E12BF1DB5D00320534 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D18B26E12BF1DB5D00320534 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D18B26F02BF1DC9000320534 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D18B26E22BF1DB6100320534 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D18B26EE2BF1DC7C00320534 /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D18B26E32BF1DB6800320534 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D18B26EC2BF1DC6600320534 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D18B26E42BF1DB6C00320534 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D18B26EA2BF1DC4C00320534 /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D18B26E72BF1DBB800320534 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				D18B26E82BF1DBD300320534 /* HomeProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		D1EDDF442BF1D8A600803935 = {
 			isa = PBXGroup;
 			children = (
@@ -63,10 +186,10 @@
 		D1EDDF4F2BF1D8A600803935 /* DemoApp */ = {
 			isa = PBXGroup;
 			children = (
-				D1EDDF502BF1D8A600803935 /* AppDelegate.swift */,
-				D1EDDF522BF1D8A600803935 /* SceneDelegate.swift */,
-				D1EDDF542BF1D8A600803935 /* ViewController.swift */,
-				D1EDDF562BF1D8A600803935 /* Main.storyboard */,
+				D18B26CE2BF1D9DD00320534 /* SupportingFiles */,
+				D18B26CF2BF1DA4500320534 /* DBBCoordinator */,
+				D18B26D02BF1DA5800320534 /* DBBModuleManager */,
+				D18B26DD2BF1DB2F00320534 /* DBBHome */,
 				D1EDDF592BF1D8A800803935 /* Assets.xcassets */,
 				D1EDDF5B2BF1D8A800803935 /* LaunchScreen.storyboard */,
 				D1EDDF5E2BF1D8A800803935 /* Info.plist */,
@@ -80,7 +203,6 @@
 				CA9CF7E5051B2D614D13817E /* Pods-DemoApp.debug.xcconfig */,
 				C9ABE4F4F2DE4E82D533139E /* Pods-DemoApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -152,9 +274,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D18B26E62BF1DB8600320534 /* Home.storyboard in Resources */,
 				D1EDDF5D2BF1D8A800803935 /* LaunchScreen.storyboard in Resources */,
 				D1EDDF5A2BF1D8A800803935 /* Assets.xcassets in Resources */,
-				D1EDDF582BF1D8A600803935 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,23 +329,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1EDDF552BF1D8A600803935 /* ViewController.swift in Sources */,
+				D18B26E92BF1DBD300320534 /* HomeProtocol.swift in Sources */,
+				D18B26EF2BF1DC7C00320534 /* HomeInteractor.swift in Sources */,
+				D18B26D82BF1DAC300320534 /* MainPresenterProtocol.swift in Sources */,
+				D18B26DA2BF1DAED00320534 /* MainPresenter.swift in Sources */,
+				D18B26ED2BF1DC6600320534 /* HomePresenter.swift in Sources */,
 				D1EDDF512BF1D8A600803935 /* AppDelegate.swift in Sources */,
 				D1EDDF532BF1D8A600803935 /* SceneDelegate.swift in Sources */,
+				D18B26D22BF1DA8100320534 /* CoordinatorProtocol.swift in Sources */,
+				D18B26DC2BF1DAF900320534 /* HomeCoordinator.swift in Sources */,
+				D18B26EB2BF1DC4C00320534 /* HomeRouter.swift in Sources */,
+				D18B26D62BF1DAB800320534 /* HomeCoordinatorProtocol.swift in Sources */,
+				D18B26F12BF1DC9000320534 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D1EDDF562BF1D8A600803935 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D1EDDF572BF1D8A600803935 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D1EDDF5B2BF1D8A800803935 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -272,7 +395,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -335,7 +458,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -366,7 +489,6 @@
 				INFOPLIST_FILE = DemoApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -376,6 +498,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.benito.DemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -394,7 +520,6 @@
 				INFOPLIST_FILE = DemoApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +529,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.benito.DemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
