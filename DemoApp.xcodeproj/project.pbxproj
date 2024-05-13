@@ -19,6 +19,11 @@
 		D18B26ED2BF1DC6600320534 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B26EC2BF1DC6600320534 /* HomePresenter.swift */; };
 		D18B26EF2BF1DC7C00320534 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B26EE2BF1DC7C00320534 /* HomeInteractor.swift */; };
 		D18B26F12BF1DC9000320534 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B26F02BF1DC9000320534 /* HomeViewController.swift */; };
+		D18B26F52BF1E02800320534 /* HomeViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B26F42BF1E02800320534 /* HomeViewController+CollectionView.swift */; };
+		D18B26F72BF1E07100320534 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B26F62BF1E07100320534 /* DataSource.swift */; };
+		D18B26F92BF1E09B00320534 /* MainResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B26F82BF1E09B00320534 /* MainResponse.swift */; };
+		D18B26FB2BF1E0DC00320534 /* ResultsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B26FA2BF1E0DC00320534 /* ResultsResponse.swift */; };
+		D18B26FE2BF1EA0100320534 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B26FD2BF1EA0100320534 /* HomeCollectionViewCell.swift */; };
 		D1EDDF512BF1D8A600803935 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EDDF502BF1D8A600803935 /* AppDelegate.swift */; };
 		D1EDDF532BF1D8A600803935 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EDDF522BF1D8A600803935 /* SceneDelegate.swift */; };
 		D1EDDF5A2BF1D8A800803935 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1EDDF592BF1D8A800803935 /* Assets.xcassets */; };
@@ -40,6 +45,11 @@
 		D18B26EC2BF1DC6600320534 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		D18B26EE2BF1DC7C00320534 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		D18B26F02BF1DC9000320534 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D18B26F42BF1E02800320534 /* HomeViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+CollectionView.swift"; sourceTree = "<group>"; };
+		D18B26F62BF1E07100320534 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		D18B26F82BF1E09B00320534 /* MainResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainResponse.swift; sourceTree = "<group>"; };
+		D18B26FA2BF1E0DC00320534 /* ResultsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsResponse.swift; sourceTree = "<group>"; };
+		D18B26FD2BF1EA0100320534 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		D1EDDF4D2BF1D8A600803935 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1EDDF502BF1D8A600803935 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1EDDF522BF1D8A600803935 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,7 +138,9 @@
 		D18B26E12BF1DB5D00320534 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D18B26FC2BF1E9CA00320534 /* Cell */,
 				D18B26F02BF1DC9000320534 /* HomeViewController.swift */,
+				D18B26F42BF1E02800320534 /* HomeViewController+CollectionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -165,6 +177,31 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		D18B26F22BF1DF8800320534 /* DBBDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				D18B26F62BF1E07100320534 /* DataSource.swift */,
+			);
+			path = DBBDataSource;
+			sourceTree = "<group>";
+		};
+		D18B26F32BF1DF9000320534 /* DBBEntity */ = {
+			isa = PBXGroup;
+			children = (
+				D18B26F82BF1E09B00320534 /* MainResponse.swift */,
+				D18B26FA2BF1E0DC00320534 /* ResultsResponse.swift */,
+			);
+			path = DBBEntity;
+			sourceTree = "<group>";
+		};
+		D18B26FC2BF1E9CA00320534 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D18B26FD2BF1EA0100320534 /* HomeCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		D1EDDF442BF1D8A600803935 = {
 			isa = PBXGroup;
 			children = (
@@ -187,8 +224,10 @@
 			isa = PBXGroup;
 			children = (
 				D18B26CE2BF1D9DD00320534 /* SupportingFiles */,
-				D18B26CF2BF1DA4500320534 /* DBBCoordinator */,
 				D18B26D02BF1DA5800320534 /* DBBModuleManager */,
+				D18B26CF2BF1DA4500320534 /* DBBCoordinator */,
+				D18B26F22BF1DF8800320534 /* DBBDataSource */,
+				D18B26F32BF1DF9000320534 /* DBBEntity */,
 				D18B26DD2BF1DB2F00320534 /* DBBHome */,
 				D1EDDF592BF1D8A800803935 /* Assets.xcassets */,
 				D1EDDF5B2BF1D8A800803935 /* LaunchScreen.storyboard */,
@@ -329,6 +368,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D18B26F72BF1E07100320534 /* DataSource.swift in Sources */,
+				D18B26FB2BF1E0DC00320534 /* ResultsResponse.swift in Sources */,
 				D18B26E92BF1DBD300320534 /* HomeProtocol.swift in Sources */,
 				D18B26EF2BF1DC7C00320534 /* HomeInteractor.swift in Sources */,
 				D18B26D82BF1DAC300320534 /* MainPresenterProtocol.swift in Sources */,
@@ -337,10 +378,13 @@
 				D1EDDF512BF1D8A600803935 /* AppDelegate.swift in Sources */,
 				D1EDDF532BF1D8A600803935 /* SceneDelegate.swift in Sources */,
 				D18B26D22BF1DA8100320534 /* CoordinatorProtocol.swift in Sources */,
+				D18B26FE2BF1EA0100320534 /* HomeCollectionViewCell.swift in Sources */,
 				D18B26DC2BF1DAF900320534 /* HomeCoordinator.swift in Sources */,
 				D18B26EB2BF1DC4C00320534 /* HomeRouter.swift in Sources */,
+				D18B26F52BF1E02800320534 /* HomeViewController+CollectionView.swift in Sources */,
 				D18B26D62BF1DAB800320534 /* HomeCoordinatorProtocol.swift in Sources */,
 				D18B26F12BF1DC9000320534 /* HomeViewController.swift in Sources */,
+				D18B26F92BF1E09B00320534 /* MainResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -29,6 +29,7 @@ extension HomeRouter: HomeRouterProtocol{
                 as? HomeViewController else { return UIViewController() }
         
         let presenter = HomePresenter()
+        presenter.interactor = HomeInteractor(dataSource: DataSource.shared)
         
         presenter.router = self
         presenter.view = vc

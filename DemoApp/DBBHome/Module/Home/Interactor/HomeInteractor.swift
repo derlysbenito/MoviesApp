@@ -9,8 +9,18 @@ import Foundation
 
 class HomeInteractor{
     
+    let dataSource : DataSource?
+    
+    required init(dataSource: DataSource) {
+        self.dataSource = dataSource
+    }
+    
 }
 
 extension HomeInteractor: HomeInteractorProtocol{
-    
+    func getMovies(onCompletion: @escaping MoviesResultError) {
+        dataSource?.getMovieUpcoming(callbackHandler: { response in
+            onCompletion(response)
+        })
+    }
 }
